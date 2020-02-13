@@ -1,0 +1,116 @@
+
+$header_height:70px;
+
+.container{
+  width: 1280px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  .header {
+    width: 1280px;
+    height: $header_height;
+    background: #011528;
+    display: flex;
+    .header-left {
+      height: $header_height;
+      display: flex;
+      width: 260px;
+      .img {
+        height: $header_height;
+        //background-size: contain;
+      }
+      .header-text {
+        height: $header_height;
+        background: #02294C;
+        font-size: 14px;
+        flex: 1;
+        line-height: $header_height;
+        padding-left: 8px;
+      }
+    }
+    .header-center {
+      color: white;
+      flex: 1;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      .header-center-text {
+        width: 100px;
+        //background: #1DA8ED;
+        font-size: 18px;
+        line-height: $header_height;
+        text-align: center;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+    .header-right {
+      width: 200px;
+    }
+  }
+  .bottom {
+    display: flex;
+    width: 1280px;
+    flex: 1;
+
+    .side {
+      width: 260px;
+      background: #011528;
+      display: flex;
+      flex-direction: column;
+      .side-content {
+        margin: 20px 0 0 5px;
+        .side-content-text {
+          height: 35px;
+          width: 250px;
+          //background: #1DA8ED;
+          margin: 20px auto ;
+          line-height: 35px;
+          //text-align: center;
+          font-size: 18px;
+          a {
+            text-decoration: none;
+            color: white;
+          }
+        }
+      }
+    }
+    .content {
+      flex: 1;
+      border: 10px #F2F2F2 solid;
+
+    }
+  }
+
+}
+
+.header-center-text-active {
+  width: 100px;
+  background: #1DA8ED;
+  font-size: 18px;
+  line-height: $header_height;
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+}
+
+.side-content-text-active {
+  height: 35px;
+  width: 250px;
+  background: #1DA8ED;
+  margin: 20px auto ;
+  line-height: 35px;
+  //text-align: center;
+  font-size: 18px;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
