@@ -1,2 +1,3 @@
 # work_yuanyou
-null
+yarn install --安装依赖
+yarn start --启动项目
